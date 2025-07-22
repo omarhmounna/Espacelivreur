@@ -1,0 +1,30 @@
+import type { CapacitorConfig } from '@capacitor/cli';
+
+const config: CapacitorConfig = {
+  appId: 'app.lovable.387bcd819a194cb1bc336b7396e4f951',
+  appName: 'yaqoot-order-manager',
+  webDir: 'dist',
+  server: {
+    url: 'https://387bcd81-9a19-4cb1-bc33-6b7396e4f951.lovableproject.com?forceHideBadge=true',
+    cleartext: true
+  },
+  plugins: {
+    SplashScreen: {
+      launchShowDuration: 3000,
+      launchAutoHide: true,
+      backgroundColor: "#ffffffff",
+      androidSplashResourceName: "splash",
+      androidScaleType: "CENTER_CROP",
+      showSpinner: false,
+      androidSpinnerStyle: "large",
+      iosSpinnerStyle: "small",
+      spinnerColor: "#999999",
+      splashFullScreen: true,
+      splashImmersive: true,
+      layoutName: "launch_screen",
+      useDialog: true,
+    },
+  },
+};
+
+export default config;
